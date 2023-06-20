@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ivan Paul</title>
+    <!-- Add your CSS stylesheets and external resources here -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dist/output.css') }}">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css" rel="stylesheet">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Source+Code+Pro:400,500,600,700" type="text/css" media="screen">
+
+</head>
+
+<body>
+    <!--START: NAVBAR-->
+
+    <nav class="flex items-center justify-center bg-white h-16 sticky top-0">
+        <ul class="flex font-bold font-sans justify-items-center">
+            <li class="m-16"> <a class="inline-block border border-white rounded hover:border-gray-200 text-sky-600 hover:bg-gray-100 py-1 px-3" href="/">Home</a> </li>
+            <li class="m-16"> <a class="inline-block border border-white rounded hover:border-gray-200 text-sky-600 hover:bg-gray-100 py-1 px-3" href="/about">About</a> </li>
+            <li class="m-16"> <a class="inline-block border border-white rounded hover:border-gray-200 text-sky-600 hover:bg-gray-100 py-1 px-3" href="/projects">Projects</a> </li>
+            <li class="m-16"> <a class="inline-block border border-white rounded hover:border-gray-200 text-sky-600 hover:bg-gray-100 py-1 px-3" href="/blog">Blog</a> </li>
+        </ul>
+    </nav>
+    <!--END: NAVBAR-->
+
+    <!--START: HERO-->
+    <div class="min-h-screen flex">
+<!--        <div class="flex items-end me-6 justify-center flex-col w-screen">-->
+        <div class="flex items-end me-6 justify-center flex-col w-screen">
+            <h1 class="text-red-800 font-bold text-6xl">Ivan Paul</h1>
+            <h2 class="text-sky-700 text-sm font-bold mt-4>">Career Changer | CS Student | Aspiring Developer</h2>
+            <div class="flex items-center justify-center gap-12">
+                <a href="mailto: ivanpauldc@gmail.com" class="flex items-center justify-center w-12 h-12 bg-white rounded hover:bg-gray-100">
+                    <i class="bx bx-envelope bx-tada-hover text-3xl"></i>
+                </a>
+                <a href="https://github.com/ivpaul" class="flex items-center justify-center w-12 h-12 bg-white rounded hover:bg-gray-100">
+                    <i class="bx bxl-github bx-tada-hover text-3xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ivpaul/" class="flex items-center justify-center w-12 h-12 bg-white rounded hover:bg-gray-100">
+                    <i class="bx bxl-linkedin bx-tada-hover text-3xl"></i>
+                </a>
+                <a href="https://www.instagram.com/ivpdi" class="flex items-center justify-center w-12 h-12 bg-white rounded hover:bg-gray-100">
+                    <i class="bx bxl-instagram bx-tada-hover text-3xl"></i>
+                </a>
+            </div>
+        </div>
+
+        {% block body %}
+        {% endblock %}
+
+    </div>
+    <!--END: HERO-->
+
+
+
+</body>
+</html>
